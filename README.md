@@ -1,4 +1,4 @@
-![Banner](https://c.tenor.com/0RAbURFv1pcAAAAM/tense-table-smash.gif)
+![Banner](https://giffiles.alphacoders.com/362/36273.gif)
 
 ## Wat is het project?
 
