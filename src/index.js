@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Title from './Title';
+import { Title, Footer } from './Components/Main';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Title>Hallo</Title>
+    <Title>Title</Title>
     <App />
+    <Footer>Footer</Footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
