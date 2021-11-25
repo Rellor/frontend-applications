@@ -1,5 +1,5 @@
-import { Title, Footer } from '../Components/main/main';
-import Layout from '../components/layout/layout'
+import { Title, Footer } from '../components/main/Main';
+import Layout from '../components/layout/Layout'
 import Link from 'next/link'
 import Head from 'next/head'
 

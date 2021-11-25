@@ -1,7 +1,7 @@
-import { Title, Footer } from '../Components/main/main';
-import Wordcloud from '../Components/wordcloud/Wordcloudcomp';
-import { KanyeProvider } from '../Provider/provider';
-import Layout from '../Components/layout/layout'
+import { Title, Footer } from '../components/main/Main';
+import Wordcloud from '../components/wordcloud/Wordcloudcomp';
+import Layout from '../components/layout/Layout'
+import { KanyeProvider } from '../components/provider/Provider';
 import Link from 'next/link'
 import Head from 'next/head'
 
