@@ -1,5 +1,6 @@
 import { Title, Footer } from '../components/main/Main';
 import Wordcloud from '../components/wordcloud/Wordcloudcomp';
+import Wordcloudfilter from '../components/wordcloud/Wordcloudfliters';
 import Layout from '../components/layout/Layout'
 import { KanyeProvider } from '../components/provider/Provider';
 import Link from 'next/link'
@@ -18,7 +19,9 @@ export default function Home() {
           </Link>
         </Title>
         <Wordcloud/>
-        <Footer>Footer</Footer>
+        <Footer>
+          <Wordcloudfilter />
+        </Footer>
       </Layout>
     </KanyeProvider>
   )

@@ -12,8 +12,8 @@ export default function Wordcloud() {
   const ref = useD3(
     (svg) => {
       if (!data) return;
-      const height = 500;
-      const width = 500;
+      const height = 1080;
+      const width = 1920;
 
       const words = data.map((d) => {
         return { text: d.word, size: d.amount };
@@ -41,13 +41,14 @@ export default function Wordcloud() {
 
       d3.select("#wordcloud").remove();
       //per update oude wordcloud weghalen
+
       svg
         .append("g")
         .attr("id", "wordcloud")
         .attr(
           "transform",
           "translate(" +
-            layout.size()[0] / 3.95 +
+            layout.size()[0] / 3 +
             "," +
             layout.size()[1] / 3.5 +
             ")"
