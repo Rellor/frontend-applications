@@ -2,11 +2,10 @@ import React, { createContext, useState, useEffect } from "react";
 import * as d3 from "d3";
 
 const finalData = []
-const KanyeContext = React.createContext({b : 1});
-export const TestContext = React.createContext(null)
+const KanyeContext = React.createContext(null); 
 
 export const KanyeProvider = ({ children }) => {
-  const [data, setData] = useState({c : 1});
+  const [data, setData] = useState(null);
   useEffect(() => {
     d3.json(
       "https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json"
@@ -30,7 +29,7 @@ export const KanyeProvider = ({ children }) => {
   }, []);
 
   return (
-    <TestContext.Provider value={data}> {children} </TestContext.Provider>
+    <KanyeContext.Provider value={data}> {children} </KanyeContext.Provider>
   );
 };
 
