@@ -6,6 +6,9 @@ const KanyeContext = React.createContext(null);
 
 export const KanyeProvider = ({ children }) => {
   const [data, setData] = useState(null);
+  const [words, setWords] = useState(null);
+  const [checked, setChecked] = useState(false);
+
   useEffect(() => {
     d3.json(
       "https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json"
@@ -36,8 +39,21 @@ export const KanyeProvider = ({ children }) => {
     });
   }, []);
 
+  useEffect(() => {
+    console.log(data, checked);
+    if (!data) return;
+    setWords(
+      data
+        .filter((d) => (checked ? d.amount > 20 : true))
+        .map((d) => ({ ...d, text: d.word, size: d.amount }))
+    );
+  }, [data, checked]);
+
   return (
-    <KanyeContext.Provider value={data}> {children} </KanyeContext.Provider>
+    <KanyeContext.Provider value={{ checked, setChecked, words }}>
+      {" "}
+      {children}{" "}
+    </KanyeContext.Provider>
   );
 };
 

@@ -18,9 +18,8 @@ export default function Home() {
             <a>Go to home</a>
           </Link>
         </Title>
-        <Wordcloud/>
+        <Wordcloudfilter />
         <Footer>
-          <Wordcloudfilter />
         </Footer>
       </Layout>
     </KanyeProvider>
