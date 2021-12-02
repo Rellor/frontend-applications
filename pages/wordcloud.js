@@ -1,5 +1,4 @@
 import { Title, Footer } from '../components/main/Main';
-import Wordcloud from '../components/wordcloud/Wordcloudcomp';
 import Wordcloudfilter from '../components/wordcloud/Wordcloudfliters';
 import Layout from '../components/layout/Layout'
 import { KanyeProvider } from '../components/provider/Provider';

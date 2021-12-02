@@ -14,14 +14,8 @@ export default function Wordcloud() {
       const width = 2500;
 
       const textScale = d3.scaleLinear().domain([1, 60]).range([1.2, 10]);
-      //scale aanmaken voor de fontsize
 
-      const color = d3
-        .scaleLinear()
-        .domain([1, 60])
-        //d3.max dataset
-        .range(["black", "red"]);
-      //scale aanmaken voor de kleur van de letters
+      const color = d3.scaleLinear().domain([1, 60]).range(["black", "red"]);
 
       const layout = cloud()
         .size([width, height])
@@ -31,10 +25,8 @@ export default function Wordcloud() {
           return d.size;
         });
       layout.start();
-      //eerste layout aanmaken. Hier de size meegeven, de data filteren op text en size, de appding meegeven en de standaard font-size. Vervolgens doorsturen naar update
 
       d3.select("#wordcloud").remove();
-      //per update oude wordcloud weghalen
 
       svg
         .append("g")
@@ -51,7 +43,6 @@ export default function Wordcloud() {
         .data(words)
         .enter()
         .append("text")
-        //g maken binnen svg, daar id aangeven en locatie aangeven van de de group. Daarna de words erin gooien en dat in text zetten.
 
         .style("fill", function (d) {
           return color(d.size);
@@ -59,9 +50,7 @@ export default function Wordcloud() {
         .style("font-size", function (d) {
           return textScale(d.size) + "em";
         })
-        //font size en kleur aanpassen op basis van de ranges en domains die meegegeven waren
         .style("opacity", 0)
-        //eerst de text opacity 0 maken zodat het vervolgens kan verschijnen
 
         .on("mouseover", function (d) {
           const nodeSelection = d3.select(this).style("opacity", 0.5);
@@ -71,13 +60,11 @@ export default function Wordcloud() {
           const nodeSelection = d3.select(this).style("opacity", 1);
           nodeSelection.select("text").style("opacity", 1);
         })
-        //hover functie gemaakt die de text opacity aanpast
 
         .attr("text-anchor", "middle")
         .attr("transform", function (d) {
           return "translate(" + [d.x, d.y] + ")";
         })
-        //woorden random locatie geven
 
         .text(function (d) {
           return d.text;
@@ -87,7 +74,6 @@ export default function Wordcloud() {
           return i * 7;
         })
         .style("opacity", 1);
-      //transition zetten op de text zodat het na elkaar verschijnt
     },
     [words]
   );
