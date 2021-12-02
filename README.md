@@ -27,5 +27,5 @@ Docenten / sprekers:<br>
 [Vincent Vijn](https://github.com/vijnv)<br>
 Websites:<br>
 [Kanye.rest](https://kanye.rest/)<br>
-[Stackoverflow](https://stackoverflow.com/)
+[Stackoverflow](https://stackoverflow.com/)<br>
 [Next.js](https://nextjs.org/)
