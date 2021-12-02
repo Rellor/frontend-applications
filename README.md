@@ -23,7 +23,7 @@ Verder staat de app ook op vercel. De link is hier te vinden: https://frontend-a
 ## Bronnen
 Bij mijn project heb ik hulp gekregen van een verschillend aantal bronnen. Deze bronnen bestaan uit:
 Docenten / sprekers:<br>
-[Robert Spier](https://github.com/roberrrt-s)<br>
+[Angelo Michel](https://codesandbox.io/u/angelo.michel)<br>
 [Vincent Vijn](https://github.com/vijnv)<br>
 Websites:<br>
 [Kanye.rest](https://kanye.rest/)<br>
