@@ -1,0 +1,416 @@
+//HOME
+![Dark souls](https://i.pinimg.com/originals/3b/d7/ac/3bd7ac63c9e5325929a58a3e6b6c8a74.gif)
+
+# 🗂️ Project
+**[Home](https://github.com/Rellor/frontend-applications/wiki)**<br>
+**[Peer review](https://github.com/Rellor/frontend-applications/wiki/Peer-review)<br>**
+**[Rubric](https://github.com/Rellor/frontend-applications/wiki/Rubric)**<br>
+**[Concept](https://github.com/Rellor/frontend-applications/wiki/Concept)**<br>
+**[Data](https://github.com/Rellor/frontend-applications/wiki/Data)**
+
+# 📖 Logboek
+**[Logboek](https://github.com/Rellor/frontend-applications/wiki/Logboek)**
+
+# 🔎 Research
+**[Next.js](https://github.com/Rellor/frontend-applications/wiki/Next.js)<br>**
+**[React](https://github.com/Rellor/frontend-applications/wiki/React)**
+
+//PEER REVIEW
+## Tom van den Berg
+
+### Gegeven:
+**Code:**<br>
+De code / structuur ziet er erg netjes uit! Wat je eventueel nog zou kunnen doen is comments toevoegen maar verder heb ik er niks over te zeggen. Lekker bezig!
+
+**Research:**<br>
+Tot nu toe staat er nog niet echt veel research in je wiki. Probeer nog wat toe te voegen!
+
+**Logboek:**<br>
+De data die in je logboek staat is duidelijk! Ik zal alleen nog even kijken naar de hoeveelheid code die je laat zien. Probeer zo vaak mogelijk een snippit te laten zien! Ookal kan deze vrij kort zijn.
+
+**Gebruikte data:**<br>
+Het zou handig zijn om een tabje te maken binnen je wiki waar je het over je data hebt! Daar kan je uitleggen wat je er allemaal mee hebt gedaan om de uitkomst te krijgen die je nu hebt.
+
+**Link voorbeeld visualisatie:**<br>
+Bij de bronnen kan je ook nog een link zetten naar de plek waar je je datavisualisatie vandaan hebt! (d3 of zelfs de API)
+
+**Image:**<br>
+Wanneer je app straks helemaal klaar is kan je in je readme of op de concept pagina nog een screenshot zetten van je eindproduct!
+
+**Concept:**<br>
+Je zou eventueel nog een aparte page aan kunnen maken op je wiki waarin je je concept uitgebreid uitlegt
+
+**Description:**<br>
+Je zou bij je github description nog even wat meer informatie kunnen geven over wat er allemaal in je project gedaan word naast dat je react en d3 gebruikt
+
+### Ontvangen:
+De ontvangen feedback is te vinden bij het [issues](https://github.com/Rellor/frontend-applications/issues) tabje
+
+//RUBRIC
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th><strong>1-2</strong></th>
+      <th><strong>3-4</strong></th>
+      <th><strong>5-6</strong></th>
+      <th><strong>7-8</strong></th>
+      <th><strong>9-10</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th align="center" scope="row"><strong>Application</strong> of subject matter</th>
+      <td align="center">Git and npm are used; the project runs without errors; data is loaded; there is a view that represents the data</td>
+      <td align="center"><strong>Views are rendered dynamically from data</strong>; interpreting the representation is easier that interpreting the raw data itself</td>
+      <td align="center"><strong>Data can be read and changed; changes to data are reflected in the interface; changes persist across page reloads</strong></td>
+      <td align="center">Views go beyond an example or tutorial: there are demonstrable additions <strong>like routing or creating data</strong></td>
+      <td align="center">😱<br>The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Understanding</th>
+      <td align="center">There is substantial own code and the student can explain how the project was created</td>
+      <td align="center">The student can explain some parts of their code, how some parts works together, and some technical choices</td>
+      <td align="center">Student understands how components, state, lifecycle works in their app. The project is structured logically. Merits of frameworks can be explained</td>
+      <td align="center">The project is complex but can easily be understood; student used or wrote code not covered in class that was carefully chosen while weighing alternatives</td>
+      <td align="center">🤓<br>The student deeply understands their code and a geeky / nerdy conversation can be held about this</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Quality</th>
+      <td align="center">The project is handed in on time, working, documented, and on GitHub</td>
+      <td align="center">Code style is consistent; code and project  are partially documented</td>
+      <td align="center">Code adheres to standards; docs cover what the project is and does</td>
+      <td align="center">Code quality is good and enforced; docs are useful and professional</td>
+      <td align="center">📚<br>Code and docs both read like great books</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Process</th>
+      <td align="center">Process is partially documented</td>
+      <td align="center">Process is properly documented</td>
+      <td align="center">Choices are evaluated and documented; progress is demonstrated; Peer feedback requested & given</td>
+      <td align="center">Significant progress or iterations are demonstrated; Storytelling principles are applied</td>
+      <td align="center">💪<br>What you did this course is amazing; Teachers are in awe of your progress</td>
+    </tr>
+  </tbody>
+</table>
+
+//CONCEPT
+Voor dit project ga ik van de quotes van Kanye west een wordcloud maken. Deze gaat op een Next.js app gemaakt worden en gaat gehost worden door vercel. De woorden in de wordcloud moeten van font-size veranderen op basis van hoevaak een woord voorkomt. Ook zal de kleur veranderen op basis van dezelfde data. Het grootste woord is ook de felste kleur rood. Verder is er ook een filter op de wordcloud waarmee je de meest gebruikte woorden kan zien.
+
+
+![Niet filtered](https://github.com/Rellor/frontend-applications/blob/main/src/Screenshot%202021-12-02%20150530.png)
+![filtered](https://github.com/Rellor/frontend-applications/blob/main/src/Screenshot%202021-12-02%20150548.png)
+
+//DATA
+Binnen dit project heb ik mijn data gehaald van de [kanye.rest api](https://kanye.rest/). Wanneer je de file aanroept krijg je de de output `{"quote":"I still think I am the greatest."}` Dit is natuurlijk maar een zin van alle zinnen die er zijn dus het bestand is een stuk groter!
+
+Ik wou deze data graag omzetten naar een wordcloud om te kunnen zien wat er allemaal nou het meeste is gezegd. Om dit te kunnen doen waren er een aantal filters nodig.
+
+* Van zinnen woorden maken
+```javascript
+words.split(" ")
+```
+* Niet gewilde tekens weghalen
+```javascript
+words.replace(/["%?!.0&123456789"]/g, " ")
+```
+* Alle letters klein maken
+```javascript
+words.toLowerCase()
+```
+* Lege vakken weghalen
+```javascript
+.replaceAll(" ", "")
+```
+
+Vervolgens is de output van de data een array van losse woorden geworden. Vervolgens worden deze woorden geteld en op basis van hoe vaak een woord voorkomt wordt daar de amount aan meegegeven zodat daar later weer dingen mee gedaan kunnen worden.
+Datavisualsation design is het maken van keuzes. Probeer slim keuzes te maken en zorg ervoor dat je je keuze ook kan toelichten. "ik vind het mooi" is niet een goede reden
+
+//LOGBOEK
+## Dag 1: 22/11/2021
+
+### Wat heb ik gedaan?
+Weer een mooie start van het laatste vak! Vandaag ben ik bezig geweest met het opzetten van een react project en het maken van een header en footer via componenten.
+
+### Hoe is het gegaan?
+Ging erg goed! Ik heb alles afgekregen dat ik af wou hebben en heb al een hoop geleerd over de werking van react.
+
+### Stukje(s) code:
+```javascript
+export const Title = ({ children }) => { return <h1 className="App-header"> {children} </h1>;}
+//Title aanmaken en zeggen dat de text die in de title komt uit de children moet komen (binnen de <Title> tag in een ander bestand)
+```
+
+## Dag 2: 23/11/2021
+
+### Wat heb ik gedaan?
+Ik ben vandaag van react overgestapt naar Next.js. Dit zodat ik uiteindelijk mijn project bij vercel kan hosten. Ik ben binnen next via de tutorial op de site verder gegaan met het opzetten van components en ook de style van de pagina. 
+
+### Hoe is het gegaan?
+Ging goed! Ik had eerst twijfels over wat ik nou precies wou doen maar ben uiteindelijk voor next.js gegaan. Vervolgens ben ik met de hulp van de docent en een tutorial erg ver gekomen!
+
+### Stukje(s) code:
+Om een globale style te maken kan je een layout verzinnen. Deze dan om alles heen zetten en boem. Je hebt een globale style!
+```javascript
+import styles from './layout.module.css'
+
+export default function Layout({ children }) {
+  return <div className={styles.container}>{children}</div>
+}
+```
+
+## Dag 3: 24/11/2021
+
+### Wat heb ik gedaan?
+Ik ben vandaag vergeten een heel deel te committen helaas... Maar verder ben ik wel druk bezig geweest! Ik ben bezig geweest met het maken van een provider voor mijn data. Deze provider haalt de data op en kan je net als je layout in de main app over alles heen zetten en dan kan je overal je data ophalen!
+
+### Hoe is het gegaan?
+Best moeizaam. Ik had lang met de docent gezeten om mijn provider aan de praat te krijgen omdat er steeds een fout was. Deze fout had te maken met mijn benamingen en kon ik gelukkig nadat we erachter kwamen snel verhelpen!
+
+### Stukje(s) code:
+```javascript
+const KanyeContext = createContext(null);
+//de context aanmaken
+
+export const KanyeProvider = ({ children }) => {
+//provider aanmaken
+  const [json, setJson] = useState(null);
+//usestate aanmaken
+  useEffect(() => {
+    d3.json(
+      "https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json"
+//data ophalen
+    ).then((json) => {
+      const myWords = json + ''
+      const wordsSeperate = myWords.split(" ")
+      const wordsRemovedI = wordsSeperate.toString().replace(/["%?!.0&123456789"]/g, ' ').toLowerCase().replaceAll(' ', '').split(',').filter(word => !!word.length)
+      setJson(wordsRemovedI);
+//data filteren en setten
+    });
+  }, []);
+
+  return (
+    <KanyeContext.Provider value={json}>{children}</KanyeContext.Provider>
+  );
+//de contextprovider aanmaken, een value geven en zeggen dat de children aangeven wat erin staat
+};
+```
+
+## Dag 4: 25/11/2021
+
+### Wat heb ik gedaan?
+Bezig geweest met het maken van components en het implementeren van mijn d3 file in de app. Verder ook nog gewerkt aan de wiki en de README.
+
+### Hoe is het gegaan?
+Het ging vandaag wat minder goed dan gehoopt. Ik ben tot nu toe nog niet veel verder gekomen met het implementeren van mijn wordcloud. Wel ben ik een stuk verder gekomen met de components en heb ik mijn wikiw/readme weer bijgehouden!
+
+### Stukje(s) code:
+```javascript
+//helaas kan ik nog geen werkend stukje code laten zien...
+```
+
+## Dag 5: 26/11/2021
+
+### Wat heb ik gedaan?
+Vandaag ben ik verder gegaan met het implementeren van mijn wordcloud in react. Verder had ik vandaag niet veel tijd omdat ik moest werken.
+
+### Hoe is het gegaan?
+De dingen waaraan ik had gewerkt gingen niet geweldig. Ik loop nogsteeds vast bij hetzelfde gedeelte. cloud() word momenteel niet gezien ookal maak ik nog extra gebruik van d3-cloud. Ik ga maandag hier meer over vragen. Verder ben ik wel aan mijn wiki gegaan. Dit ging wel goed!
+
+### Stukje(s) code:
+```javascript
+//helaas kan ik nog geen werkend stukje code laten zien...
+```
+
+## Dag 6: 29/11/2021
+
+### Wat heb ik gedaan?
+Vandaag ben ik weer verder gegaan met het implementeren van mijn wordcloud in react. Daarnaast ben ik gaan kijken naar de deployment van mijn app via vercel en het opschonen van mijn code op basis van prettier.
+
+### Hoe is het gegaan?
+Erg goed! Ik heb hulp gehad van Angelo en de wordcloud werk! Nu kan ik verder gaan met het werkend krijgen van de filters bij de wordcloud horen. Met het deployen ging het prima en mijn code ziet er een stuk schoner uit door prettier!
+
+### Stukje(s) code:
+```javascript
+//Ref aanmaken zodat je die aan kan roepen binnen een svg. In de ref kan je de chart maken
+const ref = useD3(
+    (svg) => { 
+      if (!data) return
+     //wordcloud opzet
+     
+      }[data]
+    );
+
+    if (!data) return null
+
+//ref is hierbij de data van de wordcloud
+    return (
+    <svg
+      ref={ref}
+      style={{
+        height: 500,
+        width: "100%",
+        marginRight: "0px",
+        marginLeft: "0px"
+      }}
+    >
+     )
+```
+
+## Dag 7: 30/11/2021
+
+### Wat heb ik gedaan?
+Bezig geweest met het werkend krijgen van de filters die horen bij mijn datavisualisatie. Verder nog bezig geweest met het tabje react, home en Next.js bezig geweest in de wiki.
+
+### Hoe is het gegaan?
+Vandaag was niet de beste dag helaas. Niet veel motivatie gehad omdat ik erg moe was. Morgen ga ik er weer tegenaan!
+
+### Stukje(s) code:
+```javascript
+//helaas kan ik nog geen werkend stukje code laten zien...
+```
+
+## Dag 8: 1/12/2021
+
+### Wat heb ik gedaan?
+Bezig geweest met het werkend krijgen van de filters die horen bij mijn datavisualisatie en weer verder gegaan met de wiki. Ook heb ik mijn logboek weer een beetje bijgewerkt.
+
+### Hoe is het gegaan?
+Erg goed! Met hulp van de docent zijn de filters nu werkend! Ook staat al mijn data nu in de provider om data gescheiden te houden van werking. OOk gaat de wiki nu de goede kant op.
+
+### Stukje(s) code:
+```javascript
+//een useEffect gebruiken die checked of de checkbox is aangevinkt. Vervolgens filterd de data op basis van amount wanneer de checkbox aangeklikt is.
+  useEffect(() => {
+    console.log(data, checked);
+    if (!data) return;
+    setWords(
+      data
+        .filter((d) => (checked ? d.amount > 20 : true))
+        .map((d) => ({ ...d, text: d.word, size: d.amount }))
+    );
+  }, [data, checked]);
+```
+
+## Dag 9: 2/12/2021
+
+### Wat heb ik gedaan?
+Wiki, Peer review en de laatste lootjes
+
+### Hoe is het gegaan?
+Het gaat goed vandaag. Ik heb nog een hoop kunnen leren van Tom over wat ik nog kon verbeteren en ik ben daar ook druk mee bezig geweest!
+
+### Stukje(s) code:
+```javascript
+//helaas kan ik nog geen werkend stukje code laten zien...
+```
+
+//NEXT.JS
+Voor het maken van mijn Next.js app ben ik de stappen gaan volgen die op de tutorial gegeven worden voor het maken van een Next.js app en het uploaden van die app naar Vercel. 
+
+## Installatie 
+
+Het installeren van Next.js is eigenlijk erg simpel. Dit kan namelijk via de terminal. Wanneer je in de terminal bent moet je naar de map gaan waar je heen wil en vervolgens `npx create-next-app appnaam` uitvoeren. Dit maakt de app en zet alvast een begin op om mee te werken.
+
+## Pagina's maken
+
+Het maken van pagina's binnen Next.js is erg simpel. Je stopt de pagina die je wil hebben in de map pages en boem hij staat. Vervolgens kan je de pagina opstarten en html erin zetten. Een voorbeeld van wat je in de code zou kunnen zetten is:
+```javascript
+export default function FirstPost() {
+  return <h1>First Post</h1>
+}
+```
+Omdat next niet werkt met directe links is het laden van pagina's ook een stuk sneller! Om hiervoor te zorgen is er een routing systeem gemaakt. Om dit te kunnen gebruiken moet je `Link` importeren via `import Link from 'next/link'` bovenaan de pagina. Vervolgens kan je dit nu in je page zetten als  
+```javascript
+<h1 className="title">
+  Read{' '}
+  <Link href="/posts/first-post">
+    <a>this page!</a>
+  </Link>
+</h1>
+```
+
+Hier gaat de link naar de pagina http://localhost:3000/first-post!
+
+## Head
+Als je de favicon of titel van een pagina wil aanpassen kan je gebruik maken van de `<Head> </Head>` Tag. Hierin kan je al je gewoonlijke `html tags` stoppen die je ook in de head zal doen. Hieronder valt bijvoorbeeld de `title`
+```javascript
+      <Head>
+        <title>First Post</title>
+      </Head>
+```
+
+## Titles/Footers
+Om te zorgen dat alle Title en footers op de pagina's gelijk zijn kan je aparte components aanmaken voor een Title of footer. In mijn app maak ik de Title en footer op deze manier:
+```javascript
+export const Title = ({ children }) => {
+  return <h1 className="App-header"> {children} </h1>;
+};
+
+export const Footer = ({ children }) => {
+  return <h2 className="App-footer"> {children} </h2>;
+};
+```
+Wat hier interessant is is dat ik `{ children }` gebruik. Dat houd in dat alles wat binnen de `<Footer> </Footer>` Of `<Title> </Title>` Tags staat te zien zal zijn.
+
+## CSS
+
+CSS kan je binnen Next.js scoped en global gebruiken of een layout. Maar wat houd dat in?
+
+### Scoped
+Next.js ondersteund styled-jsx. Dat is een “CSS-in-JS” library. Hierdoor kan je gemakkelijk css schrijven binnen components.
+```javascript
+<style jsx>{`
+  …
+`}</style>
+```
+### Layout
+
+Om een layout te maken moet je eerst een component maken die layout heet. Vervolgens kan je dit stukje code daarin stoppen:
+```javascript
+export default function Layout({ children }) {
+  return <div>{children}</div>
+}
+```
+Alles wat je vervolgens in de `<layout> </layout>` tags zet krijgt de style die daaraan gekoppeld is. 
+
+### Global CSS
+
+Om globale css te kunnen maken moet je een file aanmaken met de naam `pages/_app.js` en daar dit stukje code in zetten:
+```javascript
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+```
+Na het aanmaken kan je de globale css importen in dezelfde file met `import '../styles/global.css'` Er is geen andere manier om globale css te gebruiken.
+
+//REACT
+React is een flexibele Javascipt library gemaakt voor user interfaces.
+
+## React Components
+
+Een react component bestaat uit een functie met een return op het einde. In deze return kan je vervolgens de output zetten. Dit is vooral de html die je wil gaan zien. In dit voorbeeld maak ik een klein stukje informatie.
+
+```javascript
+const Article = () => {
+  return (
+    <header>
+      <h1>Grasparkiet</h1>
+      <p>De grasparkiet is een gezellige, kleine papegaaiachtige die erg populair is als huisdier. 
+      Grasparkieten kunnen goed tam worden.</p>
+    </header>
+  );
+};
+```
+
+## Props
+
+Props zijn properties die je mee kan geven om data mee te laten zien. In het voorbeeld die je hier zit is een prop gemaakt. Deze prop pakt de name van de  name die meegegeven word. Vervolgens kan je in het element name= meegeven met de naam die erbij moet komen.
+
+```javascript
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+const element = <Welcome name="Sara" />;
+```
