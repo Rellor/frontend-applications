@@ -28,3 +28,4 @@ Docenten / sprekers:<br>
 Websites:<br>
 [Kanye.rest](https://kanye.rest/)<br>
 [Stackoverflow](https://stackoverflow.com/)
+[Next.js](https://nextjs.org/)
