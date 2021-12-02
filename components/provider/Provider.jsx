@@ -14,8 +14,8 @@ export const KanyeProvider = ({ children }) => {
       "https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json"
     ).then((quotes) => {
       const myWords = quotes + "";
-      const wordsSeperate = myWords.split(" ");
-      const wordsRemovedI = wordsSeperate
+      const wordsRemovedI = myWords
+        .split(" ")
         .toString()
         .replace(/["%?!.0&123456789"]/g, " ")
         .toLowerCase()
@@ -23,7 +23,7 @@ export const KanyeProvider = ({ children }) => {
         .split(",")
         .filter((word) => !!word.length);
 
-      wordsRemovedI.forEach((word) => {
+      let geteld = wordsRemovedI.map((word) => {
         if (finalData.some((el) => el.word === word)) {
           finalData.find((el) => {
             if (el.word === word) {
@@ -34,7 +34,7 @@ export const KanyeProvider = ({ children }) => {
           finalData.push({ word: word, amount: 1 });
         }
       });
-
+      geteld;
       setData(finalData);
     });
   }, []);

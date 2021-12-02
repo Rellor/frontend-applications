@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout'
 import Link from 'next/link'
 import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
     <Head>
@@ -20,3 +20,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+export default Home;

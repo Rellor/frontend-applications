@@ -5,7 +5,7 @@ import { KanyeProvider } from '../components/provider/Provider';
 import Link from 'next/link'
 import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
   return (
     <KanyeProvider>
       <Layout>
@@ -24,3 +24,5 @@ export default function Home() {
     </KanyeProvider>
   )
 }
+
+export default Home;

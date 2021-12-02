@@ -4,7 +4,7 @@ import React from "react";
 import KanyeContext from "../provider/Provider";
 import useD3 from "../../hooks/useD3";
 
-export default function Wordcloud() {
+const Wordcloud = () => {
   const { words } = React.useContext(KanyeContext);
 
   const ref = useD3(
@@ -91,4 +91,6 @@ export default function Wordcloud() {
       }}
     ></svg>
   );
-}
+};
+
+export default Wordcloud;

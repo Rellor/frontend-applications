@@ -2,7 +2,7 @@ import KanyeContext from "../provider/Provider";
 import Wordcloud from "./Wordcloudcomp";
 import React from "react";
 
-function Wordcloudfilter() {
+const Wordcloudfilter = () => {
   const { setChecked, checked } = React.useContext(KanyeContext);
 
   const onChange = () => {
@@ -28,6 +28,6 @@ function Wordcloudfilter() {
       </div>
     </div>
   );
-}
+};
 
 export default Wordcloudfilter;
